@@ -16,4 +16,3 @@ html, body, #app {
   #menu-toggle:checked + .nav-menu {
     display: block;
   }
-}
