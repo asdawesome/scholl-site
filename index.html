@@ -8,15 +8,148 @@
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
   </head>
   <body>
-  <section class="section">
+    <nav class="navbar is-primary">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#" style="font-weight:bold;">
+          СОШ N6
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="#" class="navbar-item is-active">Home</a>
+            <a href="#" class="navbar-item">Blog</a>
+            <a href="#" class="navbar-item">Forum</a>
+            <a href="#" class="navbar-item">Shop</a>
+            <a href="#" class="navbar-item">Examples</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="app">
+  <nav class="nav has-shadow">
     <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+      <div class="nav-left">
+      </div>
+      <label for="menu-toggle" class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <input type="checkbox" id="menu-toggle" class="is-hidden"/>
+      <div class="nav-right nav-menu">
+        <a class="nav-item is-tab is-hidden-tablet">
+          <span class="icon"><i class="fa fa-home"></i></span> Home
+        </a>
+        <a class="nav-item is-tab is-hidden-tablet">
+          <span class="icon"><i class="fa fa-table"></i></span> Links
+        </a>
+        <a class="nav-item is-tab is-hidden-tablet">
+          <span class="icon"><i class="fa fa-info"></i></span> About
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="main-content columns is-fullheight">
+
+    <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+      <p class="menu-label is-hidden-touch">Navigation</p>
+      <ul class="menu-list">
+        <li>
+          <a href="#" class="">
+            <span class="icon"><i class="fa fa-home"></i></span> Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="is-active">
+            <span class="icon"><i class="fa fa-table"></i></span> Links
+          </a>
+
+          <ul>
+            <li>
+              <a href="#">
+                <span class="icon is-small"><i class="fa fa-link"></i></span> Link1
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon is-small"><i class="fa fa-link"></i></span> Link2
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="">
+            <span class="icon"><i class="fa fa-info"></i></span> About
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="container column is-10">
+      <div class="section">
+
+        <div class="card">
+          <div class="card-header"><p class="card-header-title">Header</p></div>
+          <div class="card-content"><div class="content">Content</div></div>
+        </div>
+        <br />
+
+        <div class="card is-hidden1">
+          <div class="card-header"><p class="card-header-title">Header</p></div>
+          <div class="card-content"><div class="content">Content</div></div>
+        </div>
+        <br />
+
+        <div class="card is-hidden1">
+          <div class="card-header"><p class="card-header-title">Header</p></div>
+          <div class="card-content"><div class="content">Content</div></div>
+        </div>
+        <br />
+
+        <div class="card is-hidden1">
+          <div class="card-header"><p class="card-header-title">Header</p></div>
+          <div class="card-content"><div class="content">Content</div></div>
+        </div>
+        <br />
+
+        <div class="card is-hidden1">
+          <div class="card-header"><p class="card-header-title">Header</p></div>
+          <div class="card-content"><div class="content">Content</div></div>
+        </div>
+        <br />
+
+        <div class="card is-hidden1">
+          <div class="card-header"><p class="card-header-title">Header</p></div>
+          <div class="card-content"><div class="content">Content</div></div>
+        </div>
+        <br/>
+      </div>
     </div>
   </section>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Here will be footer.
+    </p>
+  </div>
+</footer>
+    </div>
+    <script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
   </body>
 </html>
